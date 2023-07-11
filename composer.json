@@ -1,0 +1,22 @@
+{
+    "name": "lezhnev74/laravel-socialite-wix",
+    "description": "Wix driver for Laravel Socialite",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lezhnev74\\LaravelSocialiteWix\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dmitry Lezhnev",
+            "email": "lezhnev.work@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "socialiteproviders/manager": "^4.0"
+    }
+}
