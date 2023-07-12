@@ -43,6 +43,6 @@ return Socialite::driver('wix')->redirect();
 
 ### Returned User fields
 
-- ``id``
-- ``name``
-- ``email``
+- ``id`` as wix instance id
+- ``name`` as website display name
+- ``email`` as site's owner email
