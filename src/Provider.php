@@ -3,8 +3,8 @@
 namespace Lezhnev74\LaravelSocialiteWix;
 
 use GuzzleHttp\RequestOptions;
-use Laravel\Socialite\Two\AbstractProvider;
 use Laravel\Socialite\Two\User;
+use SocialiteProviders\Manager\OAuth2\AbstractProvider;
 
 class Provider extends AbstractProvider
 {
