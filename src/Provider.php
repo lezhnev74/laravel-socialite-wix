@@ -30,6 +30,15 @@ class Provider extends AbstractProvider
         return array_merge($fields, $this->parameters);
     }
 
+    public function getAccessTokenResponse($code) {
+        $response = $this->getHttpClient()->post($this->getTokenUrl(), [
+            RequestOptions::HEADERS => $this->getTokenHeaders($code),
+            RequestOptions::JSON => $this->getTokenFields($code),
+        ]);
+
+        return json_decode($response->getBody(), true);
+    }
+
     protected function getAuthUrl($state)
     {
         return $this->buildAuthUrlFromBase('https://www.wix.com/installer/install', $state);
